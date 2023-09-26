@@ -4,8 +4,7 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        Position p;
-        p = new Position(0, 0);
-        Console.WriteLine(p);
+        Board b = new Board(8, 8);
+        b.Write();
     }
 }
