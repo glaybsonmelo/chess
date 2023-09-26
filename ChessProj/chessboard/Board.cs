@@ -11,16 +11,10 @@
             this.cols = col;
             this.pieces = new Piece[rows, cols];
         }
-        public void Write()
+        public Piece GetPiece(int row, int col)
         {
-            for(int i = 0; i < rows; i++)
-            {
-                for(int j = 0; j < cols; j++)
-                {
-                    Console.Write("- ");
-                }
-                Console.WriteLine();
-            }
+            return pieces[row, col];
         }
+
     }
 }
